@@ -88,3 +88,4 @@ else:
         grep_recurse(args.search_query,args.filename)
     else:
         grep(args.search_query,args.filename)
+#END_OF_SOURCE_CODE
