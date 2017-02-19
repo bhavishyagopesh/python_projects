@@ -11,7 +11,7 @@ def server_setup():
 
     # Define the socket using the "Context"
     sock = context.socket(zmq.REP)
-    sock.bind("tcp://127.0.0.1:9001")#here comes the ip and port where message is to be sent
+    sock.bind("tcp://127.0.0.1:9003")#here comes the ip and port where message is to be sent
 
     #Server receiving messages
     while (True):
@@ -26,7 +26,7 @@ def reply_client(message):
 
     # Define the socket using the "Context"
     sock = context.socket(zmq.REQ)
-    sock.connect("tcp://127.0.0.1:9002")#here comes the ip and port from which message is to be Received
+    sock.connect("tcp://127.0.0.1:9001")#here comes the ip and port from which message is to be Received
 
     # Send the message after operating over it
     var=int(message)
@@ -54,7 +54,7 @@ def first_reply_client(message):
 
     # Define the socket using the "Context"
     sock = context.socket(zmq.REQ)
-    sock.connect("tcp://127.0.0.1:9002")#here comes the ip and port from which message is to be Received
+    sock.connect("tcp://127.0.0.1:9001")#here comes the ip and port from which message is to be Received
 
     # Send the message after operating over it
     var=int(message)
