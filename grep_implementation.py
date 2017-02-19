@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 #!/usr/bin/python2
 
+||||||| merged common ancestors
+=======
+#!/usr/bin/python
+>>>>>>> b3a5c5ee93e92756f2650bb8d64062e109145e58
 """This is a python implementation of grep module offered by unix systems.It includes full Perl regex support and -o, -r flags."""
 
 import re
@@ -90,3 +95,4 @@ else:
         grep_recurse(args.search_query,args.filename)
     else:
         grep(args.search_query,args.filename)
+#END_OF_SOURCE_CODE
