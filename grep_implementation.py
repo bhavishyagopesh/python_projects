@@ -1,3 +1,5 @@
+#!/usr/bin/python2
+
 """This is a python implementation of grep module offered by unix systems.It includes full Perl regex support and -o, -r flags."""
 
 import re
